@@ -1,6 +1,6 @@
 FROM python:3-slim
 
-RUN pip install mongo-connector && pip install 'elastic2-doc-manager[elastic5]'
+RUN pip install 'mongo-connector[elastic5]==2.5.1'
 
 VOLUME /data
 WORKDIR /data
